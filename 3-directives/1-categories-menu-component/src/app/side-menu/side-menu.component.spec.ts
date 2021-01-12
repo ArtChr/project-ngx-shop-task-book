@@ -76,7 +76,7 @@ describe('[Moдуль 3 - Компонент cписок кактегорий и
     expect(listElements.length).toEqual(subCatCount);
   });
 
-  it('при нажатии на блок с селектором .dropdown-item должен вызываться метод  redirectTo и срабатывать собственное событие goToProduct', () => {
+  it('при нажатии на блок с селектором .dropdown-item a  должен вызываться метод  redirectTo и срабатывать собственное событие categoryChange', () => {
     spyOn(component as any, 'redirectTo').and.callThrough();
     spyOn((component as any)?.categoryChange, 'emit').and.callThrough();
     (component as any).categories = categories;
