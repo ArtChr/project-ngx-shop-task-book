@@ -10,7 +10,7 @@ import { ProductCardComponent } from './home-page/product-card/product-card.comp
 import { ProductsService } from './services/products/products.service';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BASE_URL_TOKEN } from './services/interceptor/config';
-import { environment } from './../environments/environment';
+import { environment } from '../environments/environment';
 import { CategoriesService } from './services/categories/category.service';
 
 @NgModule({
