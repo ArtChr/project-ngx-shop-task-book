@@ -1,15 +1,16 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { IProduct } from '../../../../../../shared/mocks/4-services/products';
+import { IProduct } from '../../../../../../shared/mocks/4-services/product-information';
+
 @Component({
   selector: 'ngx-shop-description',
   templateUrl: './description.component.html',
 })
 export class DescriptionComponent {
   @Input() public product: IProduct = null;
-  // @ts-ignore
+
   public isShowDescription = true;
+
   @Output()
-  // @ts-ignore
   public addFeedbackEvent: EventEmitter<string> = new EventEmitter<string>();
 
   public close!: () => void;

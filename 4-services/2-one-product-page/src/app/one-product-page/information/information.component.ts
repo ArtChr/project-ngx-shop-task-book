@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { IProduct } from '../../../../../../shared/mocks/4-services/product-information';
 
 @Component({
   selector: 'ngx-shop-information',
@@ -6,12 +7,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class InformationComponent {
   @Input()
-  // @ts-ignore
   public product?: IProduct = null;
   public isShow = false;
 
   @Output()
-  // @ts-ignore
   public addToCart: EventEmitter<string> = new EventEmitter<string>();
 
   public addToBasket(): void {
